@@ -17,10 +17,12 @@ class BudgetCategory:
 
     def set_budget(self, new_budget):
         self.__budget = new_budget if new_budget >= 0 else print("Budget must be positive")
-    
+
+#Task 3
     def add_expense(self, amount):
         self.__budget -= amount
 
+#Task 4
     def display_category_summary(self):
         print(f"{self.__category}: ${self.__budget:.2f} remaining")
 
